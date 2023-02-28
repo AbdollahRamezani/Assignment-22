@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>517</width>
+    <height>563</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ToDoList</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 170, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="grid_tasks"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="textbox_newtask_title">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(75, 150, 225);
+color: rgb(240, 240, 240);
+border: 2px solid rgba(172, 172, 172, 0.33);
+border-color: rgb(255, 255, 255);
+border-radius: 7px;
+</string>
+        </property>
+        <property name="placeholderText">
+         <string>insert Title</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textbox_newtask_description">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(75, 150, 225);
+color: rgb(240, 240, 240);
+border: 2px solid rgba(172, 172, 172, 0.33);
+border-color: rgb(255, 255, 255);
+border-radius: 7px;
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>insert description</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="textbox_newtask_time">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(75, 150, 225);
+color: rgb(240, 240, 240);
+border: 2px solid rgba(172, 172, 172, 0.33);
+border-color: rgb(255, 255, 255);
+border-radius: 7px;
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>insert Time</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="textbox_newtask_date">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(75, 150, 225);
+color: rgb(240, 240, 240);
+border: 2px solid rgba(172, 172, 172, 0.33);
+border-color: rgb(255, 255, 255);
+border-radius: 7px;
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>insert Date</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Snap ITC</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(85, 0, 127);</string>
+      </property>
+      <property name="text">
+       <string>Priority</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_important">
+      <property name="font">
+       <font>
+        <family>Snap ITC</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(85, 85, 127);</string>
+      </property>
+      <property name="text">
+       <string>Important</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_normal">
+      <property name="font">
+       <font>
+        <family>Snap ITC</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(85, 85, 127);</string>
+      </property>
+      <property name="text">
+       <string>Normal</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_newtask">
+      <property name="font">
+       <font>
+        <family>Snap ITC</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(75, 150, 225);
+color: rgb(255, 255, 255);
+border: 2px solid rgba(172, 172, 172, 0.33);
+border-color: rgb(255, 255, 255);
+border-radius: 12px;</string>
+      </property>
+      <property name="text">
+       <string>Add Task</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>517</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
